@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gayatri Patil - Software Engineer Portfolio. Python developer experienced in Flask, REST APIs, PostgreSQL, and web applications." />
+  <title>Gayatri Patil | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Particle Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">GP</span>
+        <span class="logo-bracket">/&gt;</span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Gayatri Patil</span>
+      </h1>
+      <div class="hero-subtitle-wrapper">
+        <span class="hero-subtitle-static">I build</span>
+        <span class="typing-wrapper">
+          <span class="typing-text" id="typing-text"></span>
+          <span class="cursor">|</span>
+        </span>
+      </div>
+      <p class="hero-description">
+        Enthusiastic Software Engineer passionate about building robust web applications and RESTful APIs. 
+        Turning ideas into scalable, high-performance solutions.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-code"></i> View My Work
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <i class="fas fa-envelope"></i> Get In Touch
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a href="mailto:gayatripatil1107@gmail.com" class="social-icon" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://github.com/" class="social-icon" aria-label="GitHub" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/" class="social-icon" aria-label="LinkedIn" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-avatar-ring">
+        <div class="hero-avatar">
+          <span class="avatar-initials">GP</span>
+        </div>
+        <div class="orbit orbit-1">
+          <div class="orbit-icon"><i class="fab fa-python"></i></div>
+        </div>
+        <div class="orbit orbit-2">
+          <div class="orbit-icon"><i class="fas fa-database"></i></div>
+        </div>
+        <div class="orbit orbit-3">
+          <div class="orbit-icon"><i class="fas fa-server"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">A little about <span class="gradient-text">myself</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="about-text">
+            <p>
+              I'm a <strong>Software Engineer</strong> with a strong foundation in building web applications 
+              and developing RESTful APIs using <strong>Flask</strong>. I'm passionate about problem-solving and 
+              applying technical knowledge to real-world projects.
+            </p>
+            <p>
+              With hands-on experience in <strong>Python</strong>, relational databases like 
+              <strong>MySQL & PostgreSQL</strong>, and API development, I love architecting scalable solutions that 
+              make a difference.
+            </p>
+            <div class="about-tags">
+              <span class="tag"><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra</span>
+              <span class="tag"><i class="fas fa-graduation-cap"></i> B.Tech CSE, 2025</span>
+              <span class="tag"><i class="fas fa-language"></i> English, Marathi, Hindi</span>
+              <span class="tag"><i class="fas fa-briefcase"></i> Open to Work</span>
+            </div>
+          </div>
+        </div>
+        <div class="stats-grid reveal">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-code-branch"></i></div>
+            <div class="stat-number" data-target="1">0</div>
+            <div class="stat-label">Project Delivered</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-clock"></i></div>
+            <div class="stat-number" data-target="6">0</div>
+            <div class="stat-label">Months Experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-layer-group"></i></div>
+            <div class="stat-number" data-target="5">0</div>
+            <div class="stat-label">Technologies Used</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-bug"></i></div>
+            <div class="stat-number" data-target="100">0</div>
+            <div class="stat-label">Bugs Squashed</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Technical Skills</span>
+        <h2 class="section-title">My <span class="gradient-text">Tech Stack</span></h2>
+      </div>
+      <div class="skills-grid">
+        <!-- Skill Card: Python -->
+        <div class="skill-card reveal" style="--delay: 0s">
+          <div class="skill-card-inner">
+            <div class="skill-icon-wrap" style="--color: #3776ab">
+              <i class="fab fa-python"></i>
+            </div>
+            <h3 class="skill-name">Python 3.x</h3>
+            <p class="skill-desc">Primary programming language for backend development</p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="90" style="--bar-color: #3776ab"></div>
+            </div>
+            <span class="skill-level">Advanced</span>
+          </div>
+        </div>
+        <!-- Skill Card: Flask -->
+        <div class="skill-card reveal" style="--delay: 0.1s">
+          <div class="skill-card-inner">
+            <div class="skill-icon-wrap" style="--color: #000000">
+              <i class="fas fa-flask"></i>
+            </div>
+            <h3 class="skill-name">Flask</h3>
+            <p class="skill-desc">Building RESTful APIs and web applications</p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="85" style="--bar-color: #6c757d"></div>
+            </div>
+            <span class="skill-level">Advanced</span>
+          </div>
+        </div>
+        <!-- Skill Card: PostgreSQL -->
+        <div class="skill-card reveal" style="--delay: 0.2s">
+          <div class="skill-card-inner">
+            <div class="skill-icon-wrap" style="--color: #336791">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3 class="skill-name">PostgreSQL</h3>
+            <p class="skill-desc">Advanced database management, schema design & optimization</p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="80" style="--bar-color: #336791"></div>
+            </div>
+            <span class="skill-level">Proficient</span>
+          </div>
+        </div>
+        <!-- Skill Card: MySQL -->
+        <div class="skill-card reveal" style="--delay: 0.3s">
+          <div class="skill-card-inner">
+            <div class="skill-icon-wrap" style="--color: #f29111">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3 class="skill-name">MySQL</h3>
+            <p class="skill-desc">Relational database management and query handling</p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="80" style="--bar-color: #f29111"></div>
+            </div>
+            <span class="skill-level">Proficient</span>
+          </div>
+        </div>
+        <!-- Skill Card: HTML/CSS -->
+        <div class="skill-card reveal" style="--delay: 0.4s">
+          <div class="skill-card-inner">
+            <div class="skill-icon-wrap" style="--color: #e34f26">
+              <i class="fab fa-html5"></i>
+            </div>
+            <h3 class="skill-name">HTML & CSS</h3>
+            <p class="skill-desc">Front-end markup and styling</p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="75" style="--bar-color: #e34f26"></div>
+            </div>
+            <span class="skill-level">Proficient</span>
+          </div>
+        </div>
+        <!-- Skill Card: Git -->
+        <div class="skill-card reveal" style="--delay: 0.5s">
+          <div class="skill-card-inner">
+            <div class="skill-icon-wrap" style="--color: #f05032">
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <h3 class="skill-name">Git</h3>
+            <p class="skill-desc">Version control and collaborative development</p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="75" style="--bar-color: #f05032"></div>
+            </div>
+            <span class="skill-level">Proficient</span>
+          </div>
+        </div>
+        <!-- Skill Card: Postman -->
+        <div class="skill-card reveal" style="--delay: 0.6s">
+          <div class="skill-card-inner">
+            <div class="skill-icon-wrap" style="--color: #ff6c37">
+              <i class="fas fa-paper-plane"></i>
+            </div>
+            <h3 class="skill-name">Postman</h3>
+            <p class="skill-desc">API testing and documentation</p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="80" style="--bar-color: #ff6c37"></div>
+            </div>
+            <span class="skill-level">Proficient</span>
+          </div>
+        </div>
+        <!-- Skill Card: RESTful APIs -->
+        <div class="skill-card reveal" style="--delay: 0.7s">
+          <div class="skill-card-inner">
+            <div class="skill-icon-wrap" style="--color: #7c3aed">
+              <i class="fas fa-plug"></i>
+            </div>
+            <h3 class="skill-name">REST APIs</h3>
+            <p class="skill-desc">Designing and building scalable API architectures</p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="88" style="--bar-color: #7c3aed"></div>
+            </div>
+            <span class="skill-level">Advanced</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Work Experience</span>
+        <h2 class="section-title">Where I've <span class="gradient-text">Worked</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-company-info">
+                <div class="company-icon"><i class="fas fa-building"></i></div>
+                <div>
+                  <h3 class="timeline-role">Software Engineer Intern</h3>
+                  <span class="timeline-company">HiPaaS Infotech Pvt. Ltd.</span>
+                </div>
+              </div>
+              <span class="timeline-date">
+                <i class="fas fa-calendar-alt"></i> Dec 2024 – May 2025
+              </span>
+            </div>
+            <div class="timeline-body">
+              <ul class="timeline-points">
+                <li>
+                  <i class="fas fa-chevron-right"></i>
+                  Developed clean and robust <strong>Python code</strong> to support reliable application functionality
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"></i>
+                  Designed and built <strong>RESTful APIs using Flask</strong> for secure, efficient data exchange
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"></i>
+                  Managed databases including <strong>schema design, optimization</strong>, and query handling
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"></i>
+                  Debugged and troubleshot code to enhance overall <strong>application stability</strong>
+                </li>
+                <li>
+                  <i class="fas fa-chevron-right"></i>
+                  Collaborated with team to design <strong>scalable, maintainable</strong> application architectures
+                </li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Flask</span>
+                <span class="tech-badge">PostgreSQL</span>
+                <span class="tech-badge">REST APIs</span>
+                <span class="tech-badge">Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Projects</span>
+        <h2 class="section-title">Things I've <span class="gradient-text">Built</span></h2>
+      </div>
+      <div class="projects-grid">
+        <!-- Project Card -->
+        <div class="project-card reveal featured">
+          <div class="project-card-glow"></div>
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-exchange-alt"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link-btn" aria-label="GitHub" title="View on GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="project-link-btn" aria-label="Live Demo" title="Live Demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-badge">Featured Project</div>
+          <h3 class="project-title">Auto EDI Loader</h3>
+          <p class="project-desc">
+            A robust <strong>RESTful API system</strong> built with Flask for handling EDI data processing and management tasks. 
+            Features comprehensive file handling, JSON data processing, and full API documentation via Swagger.
+          </p>
+          <div class="project-features">
+            <div class="project-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>File reading & data extraction endpoints</span>
+            </div>
+            <div class="project-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>PostgreSQL integration for efficient storage</span>
+            </div>
+            <div class="project-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Swagger API documentation integration</span>
+            </div>
+            <div class="project-feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Git-based collaborative development</span>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">Flask</span>
+            <span class="tech-pill">PostgreSQL</span>
+            <span class="tech-pill">Swagger</span>
+            <span class="tech-pill">Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Education</span>
+        <h2 class="section-title">My <span class="gradient-text">Academic</span> Journey</h2>
+      </div>
+      <div class="education-grid">
+        <div class="education-card reveal">
+          <div class="edu-icon-wrap">
+            <i class="fas fa-university"></i>
+          </div>
+          <div class="edu-content">
+            <span class="edu-degree">B.Tech — Computer Science & Engineering</span>
+            <h3 class="edu-institute">Shivaji University, Kolhapur</h3>
+            <span class="edu-duration">
+              <i class="fas fa-calendar"></i> 2021 – 2025
+            </span>
+            <div class="edu-highlights">
+              <span class="edu-tag">Computer Networks</span>
+              <span class="edu-tag">DBMS</span>
+              <span class="edu-tag">OS</span>
+              <span class="edu-tag">Data Structures</span>
+              <span class="edu-tag">Web Development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strengths Section -->
+  <section id="strengths" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Strengths</span>
+        <h2 class="section-title">What Sets Me <span class="gradient-text">Apart</span></h2>
+      </div>
+      <div class="strengths-grid">
+        <div class="strength-card reveal" style="--delay: 0s">
+          <div class="strength-icon"><i class="fas fa-lightbulb"></i></div>
+          <h3>Creative Thinker</h3>
+          <p>Innovative approach to problem-solving with fresh, out-of-the-box ideas</p>
+        </div>
+        <div class="strength-card reveal" style="--delay: 0.1s">
+          <div class="strength-icon"><i class="fas fa-bolt"></i></div>
+          <h3>Quick Learner</h3>
+          <p>Fast grasping ability to adapt to new technologies and frameworks rapidly</p>
+        </div>
+        <div class="strength-card reveal" style="--delay: 0.2s">
+          <div class="strength-icon"><i class="fas fa-comments"></i></div>
+          <h3>Communication</h3>
+          <p>Excellent oral, written, and presentation skills for effective collaboration</p>
+        </div>
+        <div class="strength-card reveal" style="--delay: 0.3s">
+          <div class="strength-icon"><i class="fas fa-bullseye"></i></div>
+          <h3>Result-Focused</h3>
+          <p>Action-oriented mindset with strong focus on delivering impactful results</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="section-subtitle">I'm currently open to new opportunities. Whether you have a question or just want to say hello, my inbox is always open!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-card" id="contact-email">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-detail">
+              <span class="contact-label">Email</span>
+              <a href="mailto:gayatripatil1107@gmail.com" class="contact-value">gayatripatil1107@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-phone">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-detail">
+              <span class="contact-label">Phone</span>
+              <a href="tel:+917058934796" class="contact-value">+91 70589 34796</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-location">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-detail">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Pune, Maharashtra, India</span>
+            </div>
+          </div>
+          <div class="contact-social-links">
+            <a href="mailto:gayatripatil1107@gmail.com" class="contact-social-btn">
+              <i class="fas fa-envelope"></i> Send Email
+            </a>
+            <a href="https://github.com/" target="_blank" class="contact-social-btn ghost">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://linkedin.com/" target="_blank" class="contact-social-btn ghost">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrapper reveal">
+          <form class="contact-form" id="contact-form" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Job Opportunity / Collaboration" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit-btn" id="submit-btn">
+              <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
+              <span class="btn-loading" style="display:none;"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+            </button>
+            <div class="form-success" id="form-success" style="display:none;">
+              <i class="fas fa-check-circle"></i> Message sent successfully! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">GP</span>
+        <span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-tagline">Built with <i class="fas fa-heart" style="color:#f43f5e;"></i> by Gayatri Patil</p>
+      <p class="footer-copy">&copy; 2025 Gayatri Prakash Patil. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="mailto:gayatripatil1107@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
